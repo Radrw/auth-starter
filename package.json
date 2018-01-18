@@ -1,0 +1,84 @@
+{
+  "name": "auth-starter",
+  "version": "0.0.2",
+  "description": "A starter project with email and OAuth 2.0 authentication",
+  "author": "Patrick Muhire <pmuhire2@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/Radrw/auth-starter.git",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^4.0.0-beta.3",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "email-templates": "^2.4.1",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "ionicons": "https://registry.npmjs.org/ionicons/-/ionicons-3.0.0.tgz",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.2.1",
+    "less": "^2.7.3",
+    "lusca": "^1.5.1",
+    "mailgun-js": "^0.14.1",
+    "mongodb": "^2.2.31",
+    "nedb": "^1.8.0",
+    "next": "^4.2.1",
+    "node-sass": "^4.5.3",
+    "nodemailer": "^4.0.1",
+    "nodemailer-direct-transport": "^3.3.2",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "now-logs": "0.0.7",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "popper.js": "^1.12.3",
+    "pug": "^2.0.0-rc.4",
+    "raw-loader": "^0.5.1",
+    "react": "^16.0.0",
+    "react-bootstrap-table": "^4.3.1",
+    "react-dom": "^16.0.0",
+    "react-syntax-highlighter": "^6.1.1",
+    "react-transition-group": "^1.1.3",
+    "reactstrap": "^5.0.0-alpha.4",
+    "sass-loader": "^6.0.6",
+    "unfetch": "^3.0.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-config-xo-react": "^0.13.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "eslint-plugin-react": "^7.3.0",
+    "ionicons": "^3.0.0",
+    "xo": "^0.18.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "scripts": {
+    "test": "xo",
+    "dev": "NODE_ENV=development PORT=3000 node index.js",
+    "build": "next build",
+    "start": "node index.js",
+    "postinstall": "next build"
+  },
+  "engines": {
+    "node": "7.x.x"
+  },
+  "xo": {
+    "space:": 2,
+    "semicolon": false,
+    "extends": [
+      "xo-space",
+      "xo-react/space"
+    ],
+    "ignores": [
+      "next.config.js"
+    ]
+  }
+}
